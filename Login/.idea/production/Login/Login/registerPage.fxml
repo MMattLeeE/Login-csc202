@@ -38,9 +38,9 @@
          </font>
       </Button>
       <TextField fx:id="ssnInput" layoutX="583.0" layoutY="51.0" />
-      <Label layoutX="583.0" layoutY="30.0" text="SSN" />
-      <Label layoutX="105.0" layoutY="183.0" text="email" />
-      <Label layoutX="347.0" layoutY="184.0" text="phone number" />
+      <Label fx:id="ssnLabel" layoutX="583.0" layoutY="30.0" text="SSN" />
+      <Label fx:id="emailLabel" layoutX="105.0" layoutY="183.0" text="email" />
+      <Label fx:id="phoneNumberLabel" layoutX="347.0" layoutY="184.0" text="phone number" />
       <TextField fx:id="emailInput" layoutX="99.0" layoutY="204.0" />
       <TextField fx:id="phoneNumberInput" layoutX="342.0" layoutY="205.0" />
       <Button fx:id="addPhotoBtn" layoutX="583.0" layoutY="205.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="187.0" text="Browse" />
