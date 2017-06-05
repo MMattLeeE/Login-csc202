@@ -4,6 +4,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -25,6 +27,7 @@ public class ControllerUserPage implements Initializable{
     public Label email;
     public Label phoneNumber;
     public Label profilePhoto;
+    public ImageView imageView;
 
     public String usernameLogin;
     public User user;
@@ -74,5 +77,8 @@ public class ControllerUserPage implements Initializable{
         email.setText(user.getEmail());
         phoneNumber.setText(user.getPhoneNumber());
         profilePhoto.setText(user.getProfilePhoto());
+
+        Image image = new Image("file:" + profilePhoto.getText(),333,263,true,false);
+        imageView.setImage(image);
     }
 }
