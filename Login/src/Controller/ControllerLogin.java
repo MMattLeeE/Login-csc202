@@ -1,3 +1,7 @@
+package Controller;
+
+import Model.UserDB;
+import Model.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -59,7 +63,7 @@ public class ControllerLogin implements Initializable {
         Parent root;
 
         stage = (Stage) registerBtn.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("registerPage.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/View/registerPage.fxml"));
 
         Scene scene = new Scene(root);
         stage.setScene(scene);

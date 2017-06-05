@@ -1,3 +1,8 @@
+package Model;
+
+import Model.User;
+import Model.UserDB;
+import Model.UserIO;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +22,7 @@ public class Main extends Application{
     public void start(Stage primaryStage) throws Exception {
         loadUserDB();
 
-        Parent root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/View/loginPage.fxml"));
 
         Scene scene = new Scene(root, 600, 530);
 
@@ -28,11 +33,12 @@ public class Main extends Application{
 
     private void loadUserDB() {
         try{
-            UserDB.setUsersArrayList((ArrayList<User>)UserIO.readUsers());
+            UserDB.setUsersArrayList((ArrayList<Model.User>) UserIO.readUsers());
         } catch(IOException e) {
             System.err.print("Can't read/open users.dat file");
         } catch(ClassNotFoundException e) {
-            System.err.print("User class issue preventing reading or casting UserDB");
+            System.err.print("Model.User class issue preventing reading or casting Model.UserDB");
+            e.printStackTrace();
         }
     }
 

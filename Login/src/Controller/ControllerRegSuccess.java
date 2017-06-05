@@ -1,3 +1,5 @@
+package Controller;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -34,7 +36,7 @@ public class ControllerRegSuccess implements Initializable {
         Parent root;
 
         stage = (Stage) okBtn.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/View/loginPage.fxml"));
 
         Scene scene = new Scene(root);
         stage.setScene(scene);

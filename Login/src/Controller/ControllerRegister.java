@@ -1,3 +1,8 @@
+package Controller;
+
+import Model.User;
+import Model.UserDB;
+import Model.UserIO;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -16,6 +21,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.ResourceBundle;
 import java.util.regex.Pattern;
+
 
 /**
  * Created by Matt on 5/27/2017.
@@ -103,6 +109,7 @@ public class ControllerRegister implements Initializable {
             boolean DOBCheck = checkDOB();
             boolean phoneNumberCheck = checkPhoneNumber();
             boolean SSNcheck = checkSSN();
+
             if (UsernameCheck && EmailCheck && PasswordCheck && DOBCheck && phoneNumberCheck && SSNcheck) {
                 output = true;
             }
@@ -214,7 +221,7 @@ public class ControllerRegister implements Initializable {
     private boolean checkUsername() {
         boolean output = true;
 
-        for (int i =0; i < UserDB.getUsersArrayList().size(); i++) {
+        for (int i = 0; i < UserDB.getUsersArrayList().size(); i++) {
             if (newUsernameInput.getText().equals(UserDB.getUsersArrayList().get(i).getUsername())) {
                 errorsLabel.setText(errorsLabel.getText() + "\n" + "+" + newUsernameInput.getText() + " already exists. Pick another username.");
                 errorsLabel.setVisible(true);
@@ -322,7 +329,7 @@ public class ControllerRegister implements Initializable {
         Parent root;
 
         stage = (Stage) registerBtn.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("registrationSuccess.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/View/registrationSuccess.fxml"));
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
@@ -334,7 +341,7 @@ public class ControllerRegister implements Initializable {
         Parent root;
 
         stage = (Stage) backLogin.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/View/loginPage.fxml"));
 
         Scene scene = new Scene(root);
         stage.setScene(scene);

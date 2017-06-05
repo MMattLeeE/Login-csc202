@@ -1,3 +1,7 @@
+package Controller;
+
+import Model.User;
+import Model.UserDB;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
@@ -51,7 +55,7 @@ public class ControllerUserPage implements Initializable{
         Parent root;
 
         stage = (Stage) logoutBtn.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("loginPage.fxml"));
+        root = FXMLLoader.load(getClass().getResource("/View/loginPage.fxml"));
 
         Scene scene = new Scene(root);
         stage.setScene(scene);
