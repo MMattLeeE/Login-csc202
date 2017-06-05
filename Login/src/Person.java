@@ -1,29 +1,27 @@
-package Login;
-
 /**
  * Created by Matt on 5/27/2017.
  */
 public class Person {
     private String firstName;
     private String lastName;
-    private int ssn;
-    private int dob;
+    private String ssn;
+    private String dob;
     private String gender;
 
     public Person() {
         firstName = "firstTest";
         lastName = "lastTest";
-        ssn = 12345666;
-        dob = 23456;
+        ssn = "12345666";
+        dob = "23456";
         gender = "testGender";
     }
 
-    public Person(String firstName, String lastName, int ssn, int dob, String gender) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.ssn = ssn;
-        this.dob = dob;
-        this.gender = gender;
+    public Person(String firstName, String lastName, String ssn, String dob, String gender) {
+        setFirstName(firstName);
+        setLastName(lastName);
+        setSsn(ssn);
+        setDob(dob);
+        setGender(gender);
     }
 
     public String getFirstName() {
@@ -42,19 +40,19 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public int getSsn() {
+    public String getSsn() {
         return ssn;
     }
 
-    public void setSsn(int ssn) {
+    public void setSsn(String ssn) {
         this.ssn = ssn;
     }
 
-    public int getDob() {
+    public String getDob() {
         return dob;
     }
 
-    public void setDob(int dob) {
+    public void setDob(String dob) {
         this.dob = dob;
     }
 

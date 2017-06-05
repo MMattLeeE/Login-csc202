@@ -1,5 +1,3 @@
-package Login;
-
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -11,7 +9,6 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -34,6 +31,8 @@ public class ControllerLogin implements Initializable {
     private PasswordField passwordInput;
     @FXML
     private Label errorLabel;
+
+    public String username;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -81,6 +80,11 @@ public class ControllerLogin implements Initializable {
                     if (passwordInput.getText().equals(UserDB.getUsersArrayList().get(i).getPassword())) {
                         //if password for the given username matches output successful login message
                         displayMessage("Login Successful. Welcome " + usernameInput.getText(), Color.GREEN);
+                        try {
+                            loadUserPage();
+                        } catch (IOException ex) {
+                            System.err.println("problem loading user page");
+                        }
                     } else {
                         //if the password does not match for the given username:
                         displayMessage("password for " + usernameInput.getText() + " does not match", Color.RED);
@@ -98,5 +102,25 @@ public class ControllerLogin implements Initializable {
         errorLabel.setText(message);
         errorLabel.setVisible(true);
         errorLabel.setTextFill(fontColor);
+    }
+
+    private void loadUserPage() throws IOException{
+        Stage stage;
+        Parent root;
+
+        username = usernameInput.getText();
+
+        stage = (Stage) login.getScene().getWindow();
+
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/userPage.fxml"));
+        root = fxmlLoader.load();
+
+        ControllerUserPage controller = fxmlLoader.<ControllerUserPage>getController();
+        controller.setUserInfo(username);
+
+        Scene scene = new Scene(root);
+
+        stage.setScene(scene);
+        stage.show();
     }
 }//end of controllerLogin class
