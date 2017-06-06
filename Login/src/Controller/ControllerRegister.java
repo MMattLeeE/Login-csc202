@@ -4,14 +4,13 @@ import Model.User;
 import Model.UserDB;
 import Model.UserIO;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.scene.control.*;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.RadioButton;
+import javafx.scene.control.TextField;
 import javafx.scene.paint.Color;
 import javafx.stage.FileChooser;
-import javafx.stage.Stage;
 
 import java.io.File;
 import java.io.IOException;
@@ -67,18 +66,18 @@ public class ControllerRegister implements Initializable {
     private RadioButton radioMale;//required
     @FXML
     private RadioButton radioFemale;//required
-
-    public String photoPath = "";
+    @FXML
+    private String photoPath = "";
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        registerBtn.setOnAction(event -> {
+        registerBtn.setOnAction(e -> {
             if(validateInputs()) {
                 addUser();
                 try {
-                    loadRegisterSuccess();
-                } catch (IOException e) {
+                    LoadPage.loadRegSuccessPage(e);
+                } catch (IOException ex) {
                     System.err.println("problem loading registration success page");
                 }
             }
@@ -86,10 +85,9 @@ public class ControllerRegister implements Initializable {
 
         backLogin.setOnAction(e -> {
             try {
-                loadLoginPage();
-
+                LoadPage.loadLoginPage(e);
             } catch (IOException ex) {
-                    ex.printStackTrace();
+                ex.printStackTrace();
             }
         });
 
@@ -99,6 +97,8 @@ public class ControllerRegister implements Initializable {
 
     }
 
+    ///function returns true if all non-empty inputs satisfy requirements
+    //calls isMissingInput() and all input validation functions
     private boolean validateInputs() {
         boolean output = false;
         if (!isMissingInput()) {
@@ -116,28 +116,56 @@ public class ControllerRegister implements Initializable {
         return output;
     }
 
-    private void addUser() {
-        String firstName = firstNameInput.getText();
-        String lastName = lastNameInput.getText();
-        String ssn = ssnInput.getText();
-        String dob = dateInput.getText();
-        String gender = getRadio();
-        String username = newUsernameInput.getText();
-        String password = newPasswordInput.getText();
-        String email = emailInput.getText();
-        String phoneNumber = phoneNumberInput.getText();
+    //check to make sure all required inputs are non-empty
+    private boolean isMissingInput() {
+        boolean output=false;
 
-        User newUser = new User(firstName,lastName,ssn,dob,gender,username,password,email,phoneNumber,photoPath);
-        UserDB.getUsersArrayList().add(newUser);
+        firstNameLabel.setTextFill(Color.BLACK);
+        lastNameLabel.setTextFill(Color.BLACK);
+        newUsernameLabel.setTextFill(Color.BLACK);
+        newPasswordLabel.setTextFill(Color.BLACK);
+        confirmPasswordLabel.setTextFill(Color.BLACK);
+        genderLabel.setTextFill(Color.BLACK);
+        dobLabel.setTextFill(Color.BLACK);
 
-        try {
-            UserIO.writeUsers(UserDB.getUsersArrayList());
-        } catch (IOException e) {
-            System.err.println("can't write new user to dat file");
+        errorsLabel.setVisible(false);
+        errorsLabel.setText("");
+        errorsLabel.setTextFill(Color.RED);
+
+        if (!radioMale.isSelected() && !radioFemale.isSelected()) {
+            genderLabel.setTextFill(Color.RED);
+            errorsLabel.setText("Required information in red");
+            errorsLabel.setVisible(true);
+            output = true;
+        }
+        //initially embedded in the if statement below but didn't call setText() methods...
+        boolean A = isEmpty(firstNameInput,firstNameLabel);
+        boolean B = isEmpty(lastNameInput,lastNameLabel);
+        boolean C = isEmpty(dateInput,dobLabel);
+        boolean D = isEmpty(newUsernameInput,newUsernameLabel);
+        boolean E = isEmpty(newPasswordInput,newPasswordLabel);
+        boolean F = isEmpty(confirmNewPasswordInput,confirmPasswordLabel);
+
+        if (A || B || C || D || E || F) {
+            output = true;
         }
 
+        return output;
+    }
+    private boolean isEmpty(TextField input, Label label){
+        boolean output = false;
+
+        if (input.getText().isEmpty()) {
+            label.setTextFill(Color.RED);
+            errorsLabel.setText("Required information in red");
+            errorsLabel.setVisible(true);
+            output = true;
+        }
+
+        return output;
     }
 
+    //input validation functions
     private boolean checkSSN() {
         boolean output = true;
         if (!ssnInput.getText().isEmpty()) {
@@ -247,59 +275,33 @@ public class ControllerRegister implements Initializable {
         }
         return output;
     }
-    private boolean isMissingInput() {
-        boolean output=false;
 
-        firstNameLabel.setTextFill(Color.BLACK);
-        lastNameLabel.setTextFill(Color.BLACK);
-        newUsernameLabel.setTextFill(Color.BLACK);
-        newPasswordLabel.setTextFill(Color.BLACK);
-        confirmPasswordLabel.setTextFill(Color.BLACK);
-        genderLabel.setTextFill(Color.BLACK);
-        dobLabel.setTextFill(Color.BLACK);
-        errorsLabel.setVisible(false);
-        errorsLabel.setText("");
+    //addUser() called once validateInputs() returns true
+    private void addUser() {
+        String firstName = firstNameInput.getText();
+        String lastName = lastNameInput.getText();
+        String ssn = ssnInput.getText();
+        String dob = dateInput.getText();
+        String gender = getRadio();
+        String username = newUsernameInput.getText();
+        String password = newPasswordInput.getText();
+        String email = emailInput.getText();
+        String phoneNumber = phoneNumberInput.getText();
 
-        errorsLabel.setTextFill(Color.RED);
+        User newUser = new User(firstName,lastName,ssn,dob,gender,username,password,email,phoneNumber,photoPath);
+        UserDB.getUsersArrayList().add(newUser);
 
-        if (firstNameInput.getText().isEmpty()) {
-            firstNameLabel.setTextFill(Color.RED);
-            errorMessageBlankFields();
-            output = true;
+        try {
+            System.out.println("+before user is written into datfile");
+            UserDB.printArrayList();
+            UserIO.writeUsers(UserDB.getUsersArrayList());
+            System.out.println("+after user is written into datfile");
+            UserDB.printArrayList();
+        } catch (IOException e) {
+            System.err.println("can't write new user to dat file");
         }
-        if (lastNameInput.getText().isEmpty()) {
-            lastNameLabel.setTextFill(Color.RED);
-            errorMessageBlankFields();
-            output = true;
-        }
-        if (newUsernameInput.getText().isEmpty()) {
-            newUsernameLabel.setTextFill(Color.RED);
-            errorMessageBlankFields();
-            output = true;
-        }
-        if (newPasswordInput.getText().isEmpty()) {
-            newPasswordLabel.setTextFill(Color.RED);
-            errorMessageBlankFields();
-            output = true;
-        }
-        if (confirmNewPasswordInput.getText().isEmpty()) {
-            confirmPasswordLabel.setTextFill(Color.RED);
-            errorMessageBlankFields();
-            output = true;
-        }
-        if (!radioMale.isSelected() && !radioFemale.isSelected()) {
-            genderLabel.setTextFill(Color.RED);
-            errorMessageBlankFields();
-            output = true;
-        }
-        if (dateInput.getText().isEmpty()) {
-            dobLabel.setTextFill(Color.RED);
-            errorMessageBlankFields();
-            output = true;
-        }
-        return output;
+
     }
-
     private String getRadio() {
         if (radioMale.isSelected()) {
             return radioMale.getText();
@@ -308,43 +310,15 @@ public class ControllerRegister implements Initializable {
         }
     }
 
+    //opens a photo picker using FileChooser built-in java class
     private String addPhoto() {
         String photoLocation="";
         FileChooser fileChooser = new FileChooser();
-        File file = fileChooser.showOpenDialog((Stage) addPhotoBtn.getScene().getWindow());
+        File file = fileChooser.showOpenDialog(addPhotoBtn.getScene().getWindow());
         if(file!= null) {
             photoLocation = file.getAbsolutePath();
         }
         return photoLocation;
-    }
-
-    private void errorMessageBlankFields() {
-        errorsLabel.setText("Required information in red");
-        errorsLabel.setVisible(true);
-    }
-
-    private void loadRegisterSuccess() throws IOException {
-        Stage stage;
-        Parent root;
-
-        stage = (Stage) registerBtn.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("/View/registrationSuccess.fxml"));
-
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    private void loadLoginPage() throws IOException{
-        Stage stage;
-        Parent root;
-
-        stage = (Stage) backLogin.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("/View/loginPage.fxml"));
-
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
     }
 
 }

@@ -23,4 +23,20 @@ public class UserDB {
     public static void setUsersArrayList(ArrayList<User> users) {
         UserDB.users = users;
     }
+
+    public static void printArrayList() {
+        for (int i=0; i < users.size(); i++) {
+            System.out.print(users.get(i).getFirstName());
+            System.out.print(" " + users.get(i).getLastName());
+            System.out.print(" " + users.get(i).getSsn());
+            System.out.print(" " + users.get(i).getDob());
+            System.out.print(" " + users.get(i).getGender());
+            System.out.print(" " + users.get(i).getUsername());
+            System.out.print(" " + users.get(i).getPassword());
+            System.out.print(" " + users.get(i).getEmail());
+            System.out.print(" " + users.get(i).getPhoneNumber());
+            System.out.print(" " + users.get(i).getProfilePhoto());
+            System.out.println();
+        }
+    }
 }

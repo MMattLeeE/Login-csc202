@@ -12,6 +12,21 @@
    <children>
       <TextField fx:id="firstNameInput" layoutX="99.0" layoutY="51.0" />
       <TextField fx:id="lastNameInput" layoutX="337.0" layoutY="51.0" />
+      <TextField fx:id="ssnInput" layoutX="583.0" layoutY="51.0" />
+      <TextField fx:id="dateInput" layoutX="98.0" layoutY="132.0" />
+      <RadioButton fx:id="radioMale" layoutX="506.0" layoutY="137.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="63.0" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="genderGroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="radioFemale" layoutX="590.0" layoutY="137.0" mnemonicParsing="false" text="Female" toggleGroup="$genderGroup" />
+      <Label fx:id="ssnLabel" layoutX="583.0" layoutY="30.0" text="SSN" />
+      <Label fx:id="emailLabel" layoutX="105.0" layoutY="183.0" text="email" />
+      <Label fx:id="phoneNumberLabel" layoutX="347.0" layoutY="184.0" text="phone number" />
+      <Label layoutX="583.0" layoutY="184.0" text="Add Profile Photo" />
+      <Label fx:id="errorsLabel" layoutX="431.0" layoutY="269.0" prefHeight="266.0" prefWidth="400.0" text="errors" visible="false" wrapText="true" />
+      <TextField fx:id="emailInput" layoutX="99.0" layoutY="204.0" />
+      <TextField fx:id="phoneNumberInput" layoutX="342.0" layoutY="205.0" />
+      <Button fx:id="addPhotoBtn" layoutX="583.0" layoutY="205.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="187.0" text="Browse" />
       <Label fx:id="firstNameLabel" layoutX="99.0" layoutY="30.0" text="First Name" />
       <Label fx:id="lastNameLabel" layoutX="337.0" layoutY="30.0" text="Last Name" />
       <Label fx:id="dobLabel" layoutX="99.0" layoutY="111.0" text="Date of Birth (mm/dd/yyyy)" />
@@ -22,11 +37,6 @@
       <TextField fx:id="newUsernameInput" layoutX="220.0" layoutY="282.0" />
       <TextField fx:id="newPasswordInput" layoutX="218.0" layoutY="342.0" />
       <TextField fx:id="confirmNewPasswordInput" layoutX="218.0" layoutY="380.0" />
-      <RadioButton fx:id="radioMale" layoutX="506.0" layoutY="137.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="63.0" text="Male">
-         <toggleGroup>
-            <ToggleGroup fx:id="genderGroup" />
-         </toggleGroup></RadioButton>
-      <RadioButton fx:id="radioFemale" layoutX="590.0" layoutY="137.0" mnemonicParsing="false" text="Female" toggleGroup="$genderGroup" />
       <Button fx:id="registerBtn" layoutX="175.0" layoutY="430.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="174.0" text="Register!">
          <font>
             <Font size="18.0" />
@@ -37,15 +47,5 @@
             <Font size="12.0" />
          </font>
       </Button>
-      <TextField fx:id="ssnInput" layoutX="583.0" layoutY="51.0" />
-      <Label fx:id="ssnLabel" layoutX="583.0" layoutY="30.0" text="SSN" />
-      <Label fx:id="emailLabel" layoutX="105.0" layoutY="183.0" text="email" />
-      <Label fx:id="phoneNumberLabel" layoutX="347.0" layoutY="184.0" text="phone number" />
-      <TextField fx:id="emailInput" layoutX="99.0" layoutY="204.0" />
-      <TextField fx:id="phoneNumberInput" layoutX="342.0" layoutY="205.0" />
-      <Button fx:id="addPhotoBtn" layoutX="583.0" layoutY="205.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="187.0" text="Browse" />
-      <Label layoutX="583.0" layoutY="184.0" text="Add Profile Photo" />
-      <TextField fx:id="dateInput" layoutX="98.0" layoutY="132.0" />
-      <Label fx:id="errorsLabel" layoutX="431.0" layoutY="269.0" prefHeight="266.0" prefWidth="400.0" text="errors" visible="false" wrapText="true" />
    </children>
 </AnchorPane>

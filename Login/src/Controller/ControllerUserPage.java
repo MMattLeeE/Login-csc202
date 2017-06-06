@@ -1,18 +1,14 @@
 package Controller;
 
-import Model.User;
-import Model.UserDB;
-import javafx.fxml.FXMLLoader;
+import Model.UserCurrent;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -31,58 +27,39 @@ public class ControllerUserPage implements Initializable{
     public Label email;
     public Label phoneNumber;
     public Label profilePhoto;
+
     public ImageView imageView;
-
-    public String usernameLogin;
-    public User user;
-
     public Button logoutBtn;
 
     @Override
     public void initialize(URL location, ResourceBundle resource) {
 
-        logoutBtn.setOnAction(event -> {
+        displayCurrentUserInfo();
+
+        logoutBtn.setOnAction(e -> {
             try {
-                loadLoginPage();
-            } catch (IOException e) {
+                LoadPage.loadLoginPage(e);
+            } catch (IOException ex) {
                 System.err.println("Issue going back to login page");
             }
         });
     }
 
-    private void loadLoginPage() throws IOException {
-        Stage stage;
-        Parent root;
+    private void displayCurrentUserInfo() {
 
-        stage = (Stage) logoutBtn.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("/View/loginPage.fxml"));
-
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    public void setUserInfo(String loginUsername) {
-        this.usernameLogin = loginUsername;
-        username.setText(usernameLogin);
-
-        for (int i = 0; i < UserDB.getUsersArrayList().size(); i++) {
-            if (username.getText().equals(UserDB.getUsersArrayList().get(i).getUsername())) {
-                this.user = UserDB.getUsersArrayList().get(i);
-            }
-        }
-
-        firstName.setText(user.getFirstName());
-        lastName.setText(user.getLastName());
-        ssn.setText(user.getSsn());
-        dob.setText(user.getDob());
-        gender.setText(user.getGender());
-        password.setText(user.getPassword());
-        email.setText(user.getEmail());
-        phoneNumber.setText(user.getPhoneNumber());
-        profilePhoto.setText(user.getProfilePhoto());
+        firstName.setText(UserCurrent.getCurrentUserFirstName());
+        lastName.setText(UserCurrent.getCurrentUserLastName());
+        ssn.setText(UserCurrent.getCurrentUserSsn());
+        dob.setText(UserCurrent.getCurrentUserDob());
+        gender.setText(UserCurrent.getCurrentUserGender());
+        username.setText(UserCurrent.getCurrentUserUsername());
+        password.setText(UserCurrent.getCurrentUserPassword());
+        email.setText(UserCurrent.getCurrentUserEmail());
+        phoneNumber.setText(UserCurrent.getCurrentUserPhoneNumber());
+        profilePhoto.setText(UserCurrent.getCurrentUserProfilePhoto());
 
         Image image = new Image("file:" + profilePhoto.getText(),333,263,true,false);
         imageView.setImage(image);
     }
+
 }

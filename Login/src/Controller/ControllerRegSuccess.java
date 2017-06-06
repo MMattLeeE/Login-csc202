@@ -1,12 +1,8 @@
 package Controller;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,25 +18,13 @@ public class ControllerRegSuccess implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resource) {
-        okBtn.setOnAction(event -> {
+        okBtn.setOnAction(e -> {
             try {
-                loadLoginPage();
-            } catch (IOException e) {
+                LoadPage.loadLoginPage(e);
+            } catch (IOException ex) {
                 System.err.println("Issue going back to login page");
             }
         });
-    }
-
-    private void loadLoginPage() throws IOException {
-        Stage stage;
-        Parent root;
-
-        stage = (Stage) okBtn.getScene().getWindow();
-        root = FXMLLoader.load(getClass().getResource("/View/loginPage.fxml"));
-
-        Scene scene = new Scene(root);
-        stage.setScene(scene);
-        stage.show();
     }
 
 }
