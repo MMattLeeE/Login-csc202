@@ -12,125 +12,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="UserIO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/src/Model/UserIO.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Login/src/View/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/src/Model/Person.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/src/Model/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerUserPage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerUserPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-              <folding>
-                <element signature="method#initialize#0;class#ControllerUserPage#0" expanded="false" />
-                <element signature="method#loadLoginPage#0;class#ControllerUserPage#0" expanded="false" />
-                <element signature="method#setUserInfo#0;class#ControllerUserPage#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerLogin.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerLogin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="41" column="67" lean-forward="false" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
-              <folding>
-                <element signature="method#initialize#0;class#ControllerLogin#0" expanded="false" />
-                <element signature="method#loadRegisterPage#0;class#ControllerLogin#0" expanded="false" />
-                <element signature="method#authenticate#0;class#ControllerLogin#0" expanded="false" />
-                <element signature="method#displayMessage#0;class#ControllerLogin#0" expanded="false" />
-                <element signature="method#loadUserPage#0;class#ControllerLogin#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerRegister.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerRegister.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="343" column="0" lean-forward="true" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
-              <folding>
-                <element signature="method#initialize#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#validateInputs#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#addUser#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#checkSSN#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#checkEmail#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#checkDOB#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#checkPassword#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#checkUsername#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#checkPhoneNumber#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#isMissingInput#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#getRadio#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#addPhoto#0;class#ControllerRegister#0" expanded="false" />
-                <element signature="method#errorMessageBlankFields#0;class#ControllerRegister#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerRegSuccess.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerRegSuccess.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-              <folding>
-                <element signature="method#initialize#0;class#ControllerRegSuccess#0" expanded="false" />
-                <element signature="method#loadLoginPage#0;class#ControllerRegSuccess#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserDB.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/src/Model/UserDB.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#580#581#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/src/Model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="210">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -184,15 +70,21 @@
         <option value="$PROJECT_DIR$/Login/src/userPage.fxml" />
         <option value="$PROJECT_DIR$/Login/src/ControllerRegister.java" />
         <option value="$PROJECT_DIR$/Login/src/UserDB.java" />
-        <option value="$PROJECT_DIR$/Login/src/Controller/ControllerUserPage.java" />
-        <option value="$PROJECT_DIR$/Login/src/Controller/ControllerRegSuccess.java" />
         <option value="$PROJECT_DIR$/Login/src/Model/Main.java" />
         <option value="$PROJECT_DIR$/Login/src/View/userPage.fxml" />
-        <option value="$PROJECT_DIR$/Login/src/Model/UserDB.java" />
-        <option value="$PROJECT_DIR$/Login/src/Model/UserIO.java" />
         <option value="$PROJECT_DIR$/Login/src/Controller/ControllerLoadPage.java" />
         <option value="$PROJECT_DIR$/Login/src/Controller/ControllerLogin.java" />
+        <option value="$PROJECT_DIR$/Login/src/Controller/LoadPage.java" />
+        <option value="$PROJECT_DIR$/Login/src/Model/UserCurrent.java" />
         <option value="$PROJECT_DIR$/Login/src/Controller/ControllerRegister.java" />
+        <option value="$PROJECT_DIR$/Login/src/Controller/ControllerRegSuccess.java" />
+        <option value="$PROJECT_DIR$/Login/src/Controller/ControllerUserPage.java" />
+        <option value="$PROJECT_DIR$/Login/src/Model/Person.java" />
+        <option value="$PROJECT_DIR$/Login/src/Model/User.java" />
+        <option value="$PROJECT_DIR$/Login/src/Model/UserDB.java" />
+        <option value="$PROJECT_DIR$/Login/src/Model/UserIO.java" />
+        <option value="$PROJECT_DIR$/Login/src/View/Main.java" />
+        <option value="$PROJECT_DIR$/Login/src/View/registerPage.fxml" />
       </list>
     </option>
   </component>
@@ -203,10 +95,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
+    <option name="x" value="1911" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="width" value="1618" />
+    <option name="height" value="868" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -223,6 +115,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -317,9 +210,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,6 +229,9 @@
       <recent name="Controller" />
       <recent name="Login.Model" />
       <recent name="Login.Controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Matt\Desktop\Login-csc202\Login\src\View" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Matt\Desktop\Login-csc202\Login\src\Model" />
@@ -366,7 +261,7 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="Model.Main" />
+      <option name="MAIN_CLASS_NAME" value="View.Main" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -791,12 +686,15 @@
       <workItem from="1496698753206" duration="25000" />
       <workItem from="1496703678297" duration="28000" />
       <workItem from="1496705501711" duration="44000" />
-      <workItem from="1496711793200" duration="6766000" />
+      <workItem from="1496711793200" duration="7045000" />
+      <workItem from="1496724886943" duration="45000" />
+      <workItem from="1496734215366" duration="817000" />
+      <workItem from="1496749867237" duration="1851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46517000" />
+    <option name="totallyTimeSpent" value="49509000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -808,7 +706,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="1911" y="-9" width="1618" height="868" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -820,21 +718,21 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34566146" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34654588" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23630504" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2853437" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977092" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -860,36 +758,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/UserIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="30" column="42" lean-forward="false" selection-start-line="30" selection-start-column="42" selection-end-line="30" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerLogin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
-            <element signature="method#initialize#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#loadRegisterPage#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#authenticate#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#displayMessage#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#loadUserPage#0;class#ControllerLogin#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -899,19 +773,19 @@
         <state relative-caret-position="588">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#initialize#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#validateInputs#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#addUser#0;class#ControllerRegister#0" expanded="false" />
+            <element signature="method#isMissingInput#0;class#ControllerRegister#0" expanded="false" />
+            <element signature="method#isEmpty#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkSSN#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkEmail#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkDOB#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkPassword#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkUsername#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkPhoneNumber#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#isMissingInput#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#getRadio#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#addPhoto#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#errorMessageBlankFields#0;class#ControllerRegister#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -920,20 +794,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/Main.java">
+    <entry file="file://$PROJECT_DIR$/Login/src/View/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -952,11 +821,7 @@
         <state relative-caret-position="147">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
-            <element signature="method#initialize#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#loadRegisterPage#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#authenticate#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#displayMessage#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#loadUserPage#0;class#ControllerLogin#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -966,19 +831,19 @@
         <state relative-caret-position="168">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#initialize#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#validateInputs#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#addUser#0;class#ControllerRegister#0" expanded="false" />
+            <element signature="method#isMissingInput#0;class#ControllerRegister#0" expanded="false" />
+            <element signature="method#isEmpty#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkSSN#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkEmail#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkDOB#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkPassword#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkUsername#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkPhoneNumber#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#isMissingInput#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#getRadio#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#addPhoto#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#errorMessageBlankFields#0;class#ControllerRegister#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -987,20 +852,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/Main.java">
+    <entry file="file://$PROJECT_DIR$/Login/src/View/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1019,11 +879,7 @@
         <state relative-caret-position="147">
           <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
-            <element signature="method#initialize#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#loadRegisterPage#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#authenticate#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#displayMessage#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#loadUserPage#0;class#ControllerLogin#0" expanded="false" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1033,19 +889,19 @@
         <state relative-caret-position="168">
           <caret line="28" column="13" lean-forward="false" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#initialize#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#validateInputs#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#addUser#0;class#ControllerRegister#0" expanded="false" />
+            <element signature="method#isMissingInput#0;class#ControllerRegister#0" expanded="false" />
+            <element signature="method#isEmpty#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkSSN#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkEmail#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkDOB#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkPassword#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkUsername#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkPhoneNumber#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#isMissingInput#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#getRadio#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#addPhoto#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#errorMessageBlankFields#0;class#ControllerRegister#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1054,20 +910,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/Main.java">
+    <entry file="file://$PROJECT_DIR$/Login/src/View/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1081,13 +932,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/Main.java">
+    <entry file="file://$PROJECT_DIR$/Login/src/View/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
           <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1095,10 +944,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
           <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1112,13 +958,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/Main.java">
+    <entry file="file://$PROJECT_DIR$/Login/src/View/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
           <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,10 +970,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="15" column="59" lean-forward="true" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
-          <folding>
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1185,112 +1026,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Login/src/View/registrationSuccess.fxml" />
     <entry file="file://$PROJECT_DIR$/Login/src/View/loginPage.fxml" />
-    <entry file="file://$PROJECT_DIR$/Login/src/View/userPage.fxml" />
-    <entry file="file://$PROJECT_DIR$/Login/src/View/registerPage.fxml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerLoadPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerLoadPage.java" />
     <entry file="file://$PROJECT_DIR$/users.dat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerLogin.java">
+    <entry file="file://$PROJECT_DIR$/Login/src/Controller/LoadPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="41" column="67" lean-forward="false" selection-start-line="41" selection-start-column="67" selection-end-line="41" selection-end-column="67" />
-          <folding>
-            <element signature="method#initialize#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#loadRegisterPage#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#authenticate#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#displayMessage#0;class#ControllerLogin#0" expanded="false" />
-            <element signature="method#loadUserPage#0;class#ControllerLogin#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerRegSuccess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="method#initialize#0;class#ControllerRegSuccess#0" expanded="false" />
-            <element signature="method#loadLoginPage#0;class#ControllerRegSuccess#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerUserPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="method#initialize#0;class#ControllerUserPage#0" expanded="false" />
-            <element signature="method#loadLoginPage#0;class#ControllerUserPage#0" expanded="false" />
-            <element signature="method#setUserInfo#0;class#ControllerUserPage#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+        <state relative-caret-position="597">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/Person.java">
+    <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerLogin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/UserDB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/src/Model/UserIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="7" lean-forward="false" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="7" />
+        <state relative-caret-position="597">
+          <caret line="106" column="1" lean-forward="false" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1299,23 +1056,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerRegister.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="343" column="0" lean-forward="true" selection-start-line="343" selection-start-column="0" selection-end-line="343" selection-end-column="0" />
+        <state relative-caret-position="597">
+          <caret line="324" column="0" lean-forward="false" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#initialize#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#validateInputs#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#addUser#0;class#ControllerRegister#0" expanded="false" />
+            <element signature="method#isMissingInput#0;class#ControllerRegister#0" expanded="false" />
+            <element signature="method#isEmpty#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkSSN#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkEmail#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkDOB#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkPassword#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkUsername#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#checkPhoneNumber#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#isMissingInput#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#getRadio#0;class#ControllerRegister#0" expanded="false" />
             <element signature="method#addPhoto#0;class#ControllerRegister#0" expanded="false" />
-            <element signature="method#errorMessageBlankFields#0;class#ControllerRegister#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerRegSuccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/Controller/ControllerUserPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/Model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/Model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/Model/UserCurrent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-537">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/Model/UserDB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/Model/UserIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="597">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/View/userPage.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-63">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/View/registerPage.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="44" column="6" lean-forward="false" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/src/View/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
