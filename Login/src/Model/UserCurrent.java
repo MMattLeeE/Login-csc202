@@ -2,6 +2,11 @@ package Model;
 
 /**
  * Created by Matt on 6/6/2017.
+ *
+ *  Initially had static variables in ControllerUserPage and used reflection to save time having to type up and set 9 or so static variables.
+ *
+ *  Later decided that it was better to set user data to separate class in model.
+ *  Using reflection proved to be unnecessary and didn't really make the code cleaner...
  */
 public final class UserCurrent {
     private UserCurrent() {}

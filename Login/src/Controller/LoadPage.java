@@ -11,6 +11,11 @@ import java.io.IOException;
 
 /**
  * Created by Matt on 6/6/2017.
+ *
+ *  Centralize page loading functions as static functions.
+ *  Helps to put all the .fxml file paths in one place.
+ *  Takes a button click event and determines the stage by finding the source(i.e. button) of the event and
+ *  getting the stage of that source.
  */
 public class LoadPage {
 
