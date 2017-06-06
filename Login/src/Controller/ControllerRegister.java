@@ -99,7 +99,6 @@ public class ControllerRegister implements Initializable {
 
     }
 
-
     private boolean validateInputs() {
         boolean output = false;
         if (!isMissingInput()) {

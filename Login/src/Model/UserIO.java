@@ -4,6 +4,15 @@ import java.io.*;
 import java.nio.file.*;
 /**
  * Created by Matt on 5/30/2017.
+ *
+ * UserIO class is basically the same as shown by
+ * Professor Kanchanawanchai in the videos below:
+ *      video 1:
+ *          https://youtu.be/hZeB8NArL2k
+ *      video 2:
+ *          https://youtu.be/x9g-vXuHNkA
+ *
+ * A function checkForDatFile was added to create a .dat file when this program is first run without one.
  */
 public class UserIO {
 
@@ -19,6 +28,8 @@ public class UserIO {
         return input.readObject();
     }
 
+    //Function to check if the .dat file exists and if it doesn't creates one with a test user.
+    //Called every time when writing to .dat file.
     private static void checkForDatFile() {
         Path path = Paths.get("users.dat");
 

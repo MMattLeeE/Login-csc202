@@ -73,6 +73,7 @@ public class ControllerLogin implements Initializable {
     @FXML
     private void authenticate() {
         //check to see if the username and password fields are not empty
+
         if (usernameInput.getText().isEmpty() || passwordInput.getText().isEmpty()) {
             displayMessage("Please enter a username and password", Color.RED);
         } else {
